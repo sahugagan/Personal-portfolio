@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        background-color: #222;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+        background-color: #666;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .work {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .work-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .work-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .work-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .work-item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .work-item:hover .overlay {
+        opacity: 1;
+    }
+
+    .work-item .overlay-content {
+        text-align: center;
+    }
+
+    .work-item .overlay-content h3 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .work-item .overlay-content p {
+        margin: 10px 0 0;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #ffcc00;
+    }
+    .social-icons a:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Work</h1>
+</header>
+
+<div class="menu">
+    <ul>
+      <li><a href="C:\Users\Gagan\Downloads\portfolio/demo.html">Home</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/aboutg.html">About</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/serviceg.html">Service</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/workg.html">Work</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/resumeg.html">Resume</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/blogg.html">Blog</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/contactg.html">Contact</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="work">
+        <div class="work-item">
+            <img src="C:\Users\Gagan\Downloads/download (1).jpg" alt="Work 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>MOVIE RECOMENDATION</h3>
+                    <p>A movie recommendation system is a fancy way to describe a process that tries to predict your preferred items based on your or people similar to you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <img src="C:\Users\Gagan\Downloads/download (2).jpg" alt="Work 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>INSTAGRAM</h3>
+                    <p>Instagram is a free photo and video sharing app available on iPhone and Android.</p>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <img src="C:\Users\Gagan\Downloads/download (3).jpg" alt="Work 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>NETFLIX</h3>
+                    <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on an internet-connected device.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100015843154219&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+    <a href="https://x.com/GaganSahu200?t=5u11yqyx9g-_u0Z60iy_4w&s=09" class="fab fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/gagan-sahu-b72405241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab fa-linkedin-in"></a>
+    <a href="https://www.instagram.com/innocent_boy_tigger?igsh=aXh5NTZpbTl3Y3R0" class="fab fa-instagram"></a>\portfolio
+</div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        background-color: #222;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+        background-color: #666;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro {
+        text-align: center;
+        margin-bottom: 40px;
+        
+    }
+
+    .intro h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #ffcc00;
+    }
+
+    .intro p {
+        font-size: 18px;
+        color: #aaa;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #ffcc00;
+    }
+    .social-icons a:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+    }
+
+    /* Define the typing animation */
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    /* Apply the typing animation to the text */
+    .typing-text {
+        overflow: hidden; /* Ensures the text is not displayed outside its containing element */
+        white-space: nowrap; /* Prevents text from wrapping */
+        margin: 0 auto; /* Centers the text horizontally */
+        border-right: .15em solid orange; /* This creates the typing cursor */
+        animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    /* Define the blinking cursor animation */
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: orange; }
+    }
+</style>
+</head>
+<body>
+
+<audio id="typing-sound" src="C:\Users\Gagan\Downloads\portfolio/quick-mechanical-keyboard-14391_j5vhxPBW.mp3"></audio>
+
+<header>
+    <h1>Portfolio</h1>
+</header>
+
+<div class="menu">
+    <ul>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/demo.html">Home</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/aboutg.html">About</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/serviceg.html">Service</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/workg.html">Work</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/resumeg.html">Resume</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/blogg.html">Blog</a></li>
+        <li><a href="C:\Users\Gagan\Downloads\portfolio/contactg.html">Contact</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="intro">
+        <h1><span class="typing-text" id="typed-text"></span></h1>
+        <p>I am a student</p>
+    </div>
+</div>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100015843154219&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+    <a href="https://x.com/GaganSahu200?t=5u11yqyx9g-_u0Z60iy_4w&s=09" class="fab fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/gagan-sahu-b72405241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab fa-linkedin-in"></a>
+    <a href="https://www.instagram.com/innocent_boy_tigger?igsh=aXh5NTZpbTl3Y3R0" class="fab fa-instagram"></a>
+</div>
+
+<script>
+    // Text for typing animation
+    const text = "Gagan Sahu";
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            document.getElementById('typed-text').textContent += text.charAt(index);
+            index++;
+            // Play typing sound
+            document.getElementById('typing-sound').play();
+            setTimeout(type, Math.random() * 200 + 100); // Randomize typing speed
+        }
+    }
+
+    // Start typing animation
+    type();
+</script>
+
+</body>
+</html>
